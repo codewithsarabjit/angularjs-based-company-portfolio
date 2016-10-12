@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routerApp" ng-controller="MainController">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title ng-bind="Page.title()"></title>
+    <meta name="description" content="We Picnframes Technologies are pleased to introduce ourselves, as a professionally managed mobile application development, software products & web development company having a workforce of over 40, highly skilled designers, developers, mobile application developers(IOS, Android and Jquery Mobile) and Facebook, Twitter, Instagram, Linkedin, GooglePlus API and Google Maps Integration Specialist to provide better solutions for all your mobile/web based need. ">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/camera.css">
+    <!--<link rel="stylesheet" href="css/search.css">-->
+    <!--<link rel="stylesheet" href="css/google-map.css">-->
+
+
+  <!--JS-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/rd-smoothscroll.min.js"></script>
+    
+<script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+  <script src="lib/sweetalert.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="lib/sweetalert.css">
+    <script src="config/app.js"></script>
+    <script src="config/controller.js"></script>
+  
+
+   
+
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src='js/device.min.js'></script>
+    <style>         
+            .loader {
+                background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+                border-radius: 50%;
+                bottom: 48%;
+                height: 94px;
+                left: 0;
+                margin: 0 auto;
+                position: fixed;
+                right: 0;
+                top: 48%;
+                width: 100px;
+                z-index: 1000001;
+            }
+ </style>
+  </head>        
+  <body  >
+  <div class="loader"><img src="images/loader.gif"></div>
+   <div class="page">
+  <!--========================================================
+                            HEADER
+  =========================================================-->
+    <header>  
+      <div class="container top-sect">
+       <div class="navbar-header" style="background-color:transparent;">
+         <img src="images/picnframes.jpg">
+          <a class="search-form_toggle" href="#"></a>
+        </div>
+  
+        <div class="help-box text-right hide">      
+         <p>&nbsp;</p>
+          <a href="callto:#">0172-5065725</a>
+          <small><span>Email:</span>  info@picnframes.com</small>
+          <small><span>Skype:</span>  picnframes</small>
+        </div>
+      </div>
+
+
+      <div id="stuck_container" class="stuck_container">
+        <div class="container">   
+        <nav class="navbar navbar-default navbar-static-top pull-left">            
+
+            <div class="">  
+              <ul class="nav navbar-nav sf-menu" data-type="navbar">
+                <li >
+                  <a ui-sref="home">HOME</a>
+                </li>
+                <li >
+                  <a ui-sref="about">ABOUT</a>
+                </li>
+                <li>
+                  <a ui-sref="services">SERVICES</a>                  
+                </li>                
+                <li>
+                  <a ui-sref="portfolio">PORTFOLIO</a>
+                </li>
+                
+                <li > 
+                  <a ui-sref="contact">CONTACT US</a>
+                </li>
+              </ul>                           
+            </div>
+        </nav>   
+        
+             
+        </div>
+
+      </div>  
+    </header>
+
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+
+    <main >        
+	
+	<div ui-view></div>
+
+	 </main>
+
+    <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer>
+
+    
+
+    <section class="well1">
+      <div class="container"> 
+            <p class="rights">
+              Picnframes Technologies  &#169; 2016 All Rights Reserved.
+            </p>          
+      </div> 
+    </section>    
+  </footer>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->         
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tm-scripts.js"></script>    
+  <!-- </script> -->
+
+
+  </body>
+</html>
